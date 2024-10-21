@@ -43,8 +43,8 @@ int imaxi(int t[], int size){
     }
     return indice;
 }
-int somme(int t[], int size){
-    int somme = 0;
+long int somme(int t[], int size){
+    long int somme = 0;
     for (int i=0; i < size; i++){
         somme+=t[i];
     }
@@ -52,7 +52,7 @@ int somme(int t[], int size){
 }
 double moyenne(int t[], int size){
     double moy = 0;
-    int sum = somme(t,size);
+    long int sum = somme(t,size);
     moy = (double)sum/size;
     return moy;
 }
